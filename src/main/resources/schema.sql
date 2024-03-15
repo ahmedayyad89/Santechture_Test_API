@@ -9,3 +9,10 @@ CREATE TABLE IF NOT EXISTS `user` (
    `username` VARCHAR(150) NOT NULL,
    `email` VARCHAR(250) NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS `token` (
+  `token_id`  INTEGER PRIMARY KEY AUTO_INCREMENT,
+  `token` VARCHAR(250) NOT NULL,
+  `is_logged_out` INT(1) NOT NULL DEFAULT 0,
+  `admin_id` INTEGER NOT NULL
+)

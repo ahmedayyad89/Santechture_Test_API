@@ -3,7 +3,7 @@ package com.santechture.api.exception;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class BusinessExceptions extends Exception{
+public class BusinessExceptions extends RuntimeException{
     public Object[] args;
 
     public String message;
